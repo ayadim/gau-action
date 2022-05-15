@@ -23,7 +23,7 @@ inputs:
   subdomains:
     description: "include subdomains of target domain"
     required: false
-    default: true
+    default: false
 
   output:
     description: "File to save output result"
