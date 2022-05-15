@@ -25,7 +25,7 @@ runs:
       shell: bash
 
     - run: |
-        gau \
+        gau  --threads 10 \
           ${{ env.output }} \        
           < ${{ env.urls }} 
       shell: bash
