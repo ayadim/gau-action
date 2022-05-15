@@ -13,7 +13,7 @@ inputs:
 
   urls:
     description: "list of domains to scan"
-    required: false      
+    required: true      
 
   blacklist:
     description: "list of extensions to skip : 'jpg,txt' "

@@ -62,7 +62,7 @@ jobs:
         with:
           urls: input-data/gau-domains.txt
           threads: 10
-          subdomains: false
+          subdomains: true
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
@@ -73,3 +73,14 @@ jobs:
 
 
 ```
+
+Available Inputs
+------
+
+| Key               | Description                                         | Required |
+| ----------------- | --------------------------------------------------- | -------- |
+| `urls`            | List of urls to run nuclei scan                     | true     |
+| `threads	`       | Custom templates directory/file to run nuclei scan  | false    |
+| `subdomains`      | include subdomains of target domain                 | false    |
+| `output`          | File to save output result (default - nuclei.log)   | false    |
+| `blacklist`       | list of extensions to skip : 'jpg,txt'              | false    |
