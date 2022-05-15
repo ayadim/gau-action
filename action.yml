@@ -27,5 +27,5 @@ runs:
     - run: |
         gau \
           ${{ env.output }} \        
-          < ${{ env.urls }} \
+          < ${{ env.urls }} 
       shell: bash
