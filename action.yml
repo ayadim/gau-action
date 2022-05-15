@@ -26,5 +26,5 @@ runs:
       shell: bash
 
     - run: |
-        echo ${{ env.domain }} | /home/runner/go/bin/gau --threads 10
+        echo ${{ env.domain }} | /home/runner/go/bin/gau --threads 10 ${{ env.output }}
       shell: bash
