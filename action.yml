@@ -25,5 +25,5 @@ runs:
       shell: bash
 
     - run: |
-        echo ${{ env.urls }} | /home/runner/go/bin/gau  --verbose 
+        /home/runner/go/bin/gau  --verbose  > ${{ env.output }}
       shell: bash
