@@ -32,5 +32,8 @@ runs:
       shell: bash
 
     - run: |
-        cat ${{ env.urls }} | /home/runner/go/bin/gau ${{ env.threads }} ${{ env.output }}
+        cat ${{ env.urls }} | \
+         /home/runner/go/bin/gau \
+         ${{ env.threads }} \
+         ${{ env.output }}
       shell: bash
