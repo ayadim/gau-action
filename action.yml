@@ -25,6 +25,5 @@ runs:
       shell: bash
 
     - run: |
-        echo ${{ env.urls }}
-        echo ${{ env.urls }} | gau  --threads 10 
+        echo ${{ env.urls }} | /home/runner/go/bin/gau  --threads 10 
       shell: bash
