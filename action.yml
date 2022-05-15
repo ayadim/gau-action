@@ -25,5 +25,5 @@ runs:
       shell: bash
 
     - run: |
-        echo $path
+        /home/runner/go/bin/gau --version
       shell: bash
